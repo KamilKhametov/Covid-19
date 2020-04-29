@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="shortcut icon" href="./images/virus.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/vue/1.0.25/vue.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Vue.Jscript</title>
+
+
+
+    <div id="app">
+
+    
+
+
+        <ul>
+
+            <li v-for="cov in covids" :class="{ 'strike': cov.status }">{{ cov.name }}</li>
+        </ul>
+
+    </div>
+
+
+    <a target="_blank" href="https://yandex.ru/health/turbo/articles?id=7077&text=коронавирус&ids=7077&utm_source=yandex&utm_medium=search&utm_campaign=yandex-searchster&utm_content=article&saas_webreqid=1584549544021201-701422291716994668204003-vla1-3667"><img class="icon_covid" src="./images/covid_icon_for_background.png"></a>
+
+
+    <p id="text_survived">Выживает сильнейший...</p>
+
+    <script>
+    
+    new Vue({
+        el:"#app",
+
+        
+        data:{
+
+            covids:[{
+                name: 'Маски',
+                status: true
+            },
+
+            {
+
+                name: 'Макороны',
+                status: false
+
+            },
+
+            {
+
+                name: 'Туалетная бумага',
+                status: true
+
+           },
+
+           {
+
+            name: 'Гречка',
+            status: false
+
+           },
+
+           {
+
+            name: 'Вода',
+            status: false
+
+           },
+
+
+           {
+
+            name: 'Медикаменты',
+            status: true
+
+           },
+
+
+           {
+
+            name: 'Консервы',
+            status: false
+
+           }
+
+            ]
+
+        }
+
+    })
+    
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

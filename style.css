@@ -1,0 +1,67 @@
+body {
+
+    background-image: url(images/background_covid.jpg);
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    color: black;
+
+}
+
+
+
+ul {
+
+    list-style: none;
+
+    width: 250px;
+    height: 430px;
+    margin: 100px 250px 0;
+    background-color: #fff;
+    padding: 6px 0;
+    border-radius: 2px;
+
+}
+
+
+
+li {
+
+    display: block;
+    padding: 20px 30px;
+
+}
+
+
+
+li:last-child {
+
+    border-bottom: none;
+
+}
+
+
+
+.strike {
+
+    text-decoration: line-through;
+    color: #aaa;
+
+}
+
+
+.icon_covid{
+
+    height: 50px;
+    width: 50px;
+    margin: 10px 250px 0;
+
+}
+
+
+
+#text_survived{
+
+    padding-top: 400px;
+
+
+}
