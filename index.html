@@ -18,9 +18,8 @@
 
         <ul>
 
-            <li v-for="cov in covids" :class="{ 'strike': cov.status }">{{ cov.name }}</li>
-        </ul>
-
+            <li v-for="cov in covids" @click="cov.status = !cov.status" :class="{ 'strike': cov.status }">{{ cov.name }}
+            </li>
     </div>
 
 
@@ -28,6 +27,7 @@
 
 
     <p id="text_survived">Выживает сильнейший...</p>
+
 
     <script>
     
